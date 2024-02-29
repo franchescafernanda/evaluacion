@@ -1,2 +1,14 @@
+import React, { useState } from 'react';
 
-//debo lograr que el buscador realice la busqueda de nombre, precio
+function Buscador({ value, onChange }) {
+  return (
+    <input
+      type="text"
+      value={value}
+      onChange={onChange}
+      placeholder="Buscar feriado"
+    />
+  );
+}
+
+export default Buscador;
