@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 function Buscador({ value, onChange }) {
   return (
@@ -9,7 +9,7 @@ function Buscador({ value, onChange }) {
       placeholder="Buscar feriado:"
       className="search-input"
     />
-  );
+  )
 }
 
-export default Buscador;
+export default Buscador

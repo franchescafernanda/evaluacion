@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 
 function MiApi({ feriados }) {
-  const [feriadosState, setFeriadosState] = useState([]);
+  const [feriadosState, setFeriadosState] = useState([])
 
   useEffect(() => {
-    setFeriadosState(feriados);
-  }, [feriados]);
+    setFeriadosState(feriados)
+  }, [feriados])
 
   return (
     <div className="feriados-container">
@@ -19,7 +19,7 @@ function MiApi({ feriados }) {
         </div>
       ))}
     </div>
-  );
+  )
 }
 
-export default MiApi;
+export default MiApi
