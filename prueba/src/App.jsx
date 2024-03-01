@@ -8,6 +8,7 @@ function App() {
   const [busqueda, setBusqueda] = useState('')
   const [reverse, setReverse] = useState(false)
 
+  //1//
   useEffect(() => {
     fetch('https://api.victorsanmartin.com/feriados/en.json')
       .then(response => response.json())
@@ -22,10 +23,13 @@ function App() {
       .catch(error => console.error('Error:', error))
   }, [])
 
+
+  //2//
   const handleChange = (e) => {
     setBusqueda(e.target.value)
   }
 
+  //3//
   const handleSort = () => {
     setReverse(!reverse)
   }
