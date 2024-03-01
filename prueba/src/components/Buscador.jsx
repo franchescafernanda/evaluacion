@@ -6,7 +6,8 @@ function Buscador({ value, onChange }) {
       type="text"
       value={value}
       onChange={onChange}
-      placeholder="Buscar feriado"
+      placeholder="Buscar feriado:"
+      className="search-input"
     />
   );
 }

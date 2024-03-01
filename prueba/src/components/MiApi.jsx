@@ -8,13 +8,14 @@ function MiApi({ feriados }) {
   }, [feriados]);
 
   return (
-    <div>
-      {feriadosState.map(feriado => (
-        <div key={feriado.date}>
-          <h3>{feriado.title}</h3>
+    <div className="feriados-container">
+      {feriadosState.map((feriado) => (
+        <div key={feriado.date} className="feriado-card">
+          <h3 className="title">{feriado.title}</h3>
+          <p>Date: {feriado.date}</p>
           <p>Type: {feriado.type}</p>
           <p>Inalienable: {feriado.inalienable ? 'Yes' : 'No'}</p>
-          <p>Extra: {feriado.extra}</p>
+          <p>Extra: {feriado.extra ? 'Yes' : 'No'}</p>
         </div>
       ))}
     </div>

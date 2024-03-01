@@ -1,7 +1,50 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
+
+.App {
+  font-family: Arial, sans-serif;
+  background-color: rgb(143, 143, 211);
   padding: 2rem;
+  height: 100vh;
   text-align: center;
 }
- */
+
+.titulo {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 50%;
+}
+
+.feriados-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  justify-content: center;
+}
+
+.feriado-card {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+input.search-input {
+  margin: 10px;
+}
